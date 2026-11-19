@@ -4,15 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Pran Murad Dealership — Inventory & Sales</title>
-    <meta name="description" content="Real-time inventory, stock level tracking, daily sales reports, and low-stock SMS/push alerts for Pran Group Dealership." />
+    <meta name="description" content="Real-time inventory, stock level tracking, daily sales reports, and low-stock WhatsApp/push alerts for Pran Group Dealership." />
     <meta property="og:title" content="Pran Murad Dealership — Inventory & Sales" />
-    <meta property="og:description" content="Real-time inventory, stock level tracking, daily sales reports, and low-stock SMS/push alerts for Pran Group Dealership." />
+    <meta property="og:description" content="Real-time inventory, stock level tracking, daily sales reports, and low-stock WhatsApp/push alerts for Pran Group Dealership." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function () {
+        try {
+          var proto = window.Window && window.Window.prototype;
+          var desc =
+            Object.getOwnPropertyDescriptor(window, 'fetch') ||
+            (proto && Object.getOwnPropertyDescriptor(proto, 'fetch'));
+          if (desc && desc.get && !desc.set && desc.configurable) {
+            var nativeFetch = window.fetch;
+            Object.defineProperty(window, 'fetch', {
+              value: nativeFetch,
+              writable: true,
+              enumerable: true,
+              configurable: true,
+            });
+          }
+          window.addEventListener(
+            'error',
+            function (ev) {
+              if (
+                ev &&
+                ((ev.filename && ev.filename.indexOf('chrome-extension://') === 0) ||
+                  (ev.message && ev.message.indexOf('Cannot set property fetch') !== -1))
+              ) {
+                ev.preventDefault();
+              }
+            },
+            true
+          );
+        } catch (_) {}
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
-    <script type="module" crossorigin src="./assets/index-C_BNp-VU.js"></script>
+    <script type="module" crossorigin src="./assets/index-DocpvHsZ.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-D0Rr7DKt.css">
   </head>
   <body class="bg-slate-50 text-slate-900 antialiased selection:bg-emerald-600 selection:text-white">
